@@ -17,6 +17,7 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/preset-flow": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-preset-flow": "^6.23.0"
   }
