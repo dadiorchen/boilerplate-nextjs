@@ -1,5 +1,7 @@
 //@flow
 import React from 'react'
+import '../i18n.js'
+import { Translation } from 'react-i18next'
 
 export default class Index extends React.Component<{
 	props		: any,
@@ -17,13 +19,14 @@ export default class Index extends React.Component<{
 
 	render(){
 		return (
-		<div>
-			{this.state.ln === 'en' ?
-				<div>Hi, I am Dadiorchen!</div>
-			:
-				<div>嗨, 我是陈征!</div>
+		<Translation>
+			{
+				t =>
+				<div>
+					<h1>{t('welcome', {lng:this.state.ln})}</h1>
+				</div>
 			}
-		</div>
+		</Translation>
 		)
 	}
 }
