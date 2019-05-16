@@ -20,6 +20,8 @@
     "@babel/preset-flow": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-preset-flow": "^6.23.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.0",
     "flow-bin": "^0.98.1",
     "jest": "^24.8.0"
   }
