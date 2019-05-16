@@ -6,7 +6,17 @@ import Index from './pages/index.js'
 
 describe('test', () => {
 	it('test', () => {
-		const index		= shallow(<Index/>)
+		const props		= {
+			url		: {
+				query		: {
+					ln		: 'zh',
+				}
+			},
+		}
+		const index		= shallow(
+			//$FlowFixMe
+			<Index {...props} />
+		)
 		console.log(index.debug())
 	})
 })
